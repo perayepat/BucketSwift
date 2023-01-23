@@ -14,6 +14,7 @@
 		4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43581199297EC34C0060F203 /* TypeConformance.swift */; };
 		4358119C297EC7CE0060F203 /* WritingToDocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */; };
 		4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119D297ECDC70060F203 /* SwitchingViewStates.swift */; };
+		435811A0297ECF800060F203 /* Intergrating Mapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119F297ECF800060F203 /* Intergrating Mapkit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		43581199297EC34C0060F203 /* TypeConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConformance.swift; sourceTree = "<group>"; };
 		4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingToDocumentDirectory.swift; sourceTree = "<group>"; };
 		4358119D297ECDC70060F203 /* SwitchingViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStates.swift; sourceTree = "<group>"; };
+		4358119F297ECF800060F203 /* Intergrating Mapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intergrating Mapkit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				43581199297EC34C0060F203 /* TypeConformance.swift */,
 				4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */,
 				4358119D297ECDC70060F203 /* SwitchingViewStates.swift */,
+				4358119F297ECF800060F203 /* Intergrating Mapkit.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435811A0297ECF800060F203 /* Intergrating Mapkit.swift in Sources */,
 				4358119C297EC7CE0060F203 /* WritingToDocumentDirectory.swift in Sources */,
 				4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */,
 				4358118D297EC3200060F203 /* ContentView.swift in Sources */,
