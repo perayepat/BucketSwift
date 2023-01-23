@@ -11,6 +11,7 @@
 		4358118D297EC3200060F203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358118C297EC3200060F203 /* ContentView.swift */; };
 		4358118F297EC3210060F203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4358118E297EC3210060F203 /* Assets.xcassets */; };
 		43581192297EC3210060F203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43581191297EC3210060F203 /* Preview Assets.xcassets */; };
+		4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43581199297EC34C0060F203 /* TypeConformance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4358118C297EC3200060F203 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4358118E297EC3210060F203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43581191297EC3210060F203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43581199297EC34C0060F203 /* TypeConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConformance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		43581189297EC3200060F203 /* BucketSwift */ = {
 			isa = PBXGroup;
 			children = (
+				43581198297EC3340060F203 /* Practice */,
 				4358118A297EC3200060F203 /* BucketSwiftApp.swift */,
 				4358118C297EC3200060F203 /* ContentView.swift */,
 				4358118E297EC3210060F203 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				43581191297EC3210060F203 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43581198297EC3340060F203 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				43581199297EC34C0060F203 /* TypeConformance.swift */,
+			);
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */,
 				4358118D297EC3200060F203 /* ContentView.swift in Sources */,
 				4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */,
 			);
