@@ -6,14 +6,22 @@ struct Intergrating_Mapkit: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: -0.12),span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     
     var body: some View {
-        ZStack {
-            Map(coordinateRegion: $mapRegion, annotationItems: Location.locations) { location in
-                MapMarker(coordinate: location.coordinate,tint: .green)
-            }
-                .ignoresSafeArea()
-            Color.red
-                .ignoresSafeArea()
-                .blendMode(.hue)
+        NavigationView {
+            
+                Map(coordinateRegion: $mapRegion, annotationItems: Location.locations) { location in
+                    MapAnnotation(coordinate: location.coordinate) {
+                        NavigationLink(destination: Text(location.name)) {
+                            Circle()
+                                .stroke(.green, lineWidth: 3)
+                            .frame(width: 100)
+                        }
+                    }
+                }
+                    .ignoresSafeArea()
+                Color.red
+                    .ignoresSafeArea()
+                    .blendMode(.hue)
+            
         }
     }
 }
