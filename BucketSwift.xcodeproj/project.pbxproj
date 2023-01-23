@@ -12,6 +12,8 @@
 		4358118F297EC3210060F203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4358118E297EC3210060F203 /* Assets.xcassets */; };
 		43581192297EC3210060F203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43581191297EC3210060F203 /* Preview Assets.xcassets */; };
 		4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43581199297EC34C0060F203 /* TypeConformance.swift */; };
+		4358119C297EC7CE0060F203 /* WritingToDocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */; };
+		4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119D297ECDC70060F203 /* SwitchingViewStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		4358118E297EC3210060F203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43581191297EC3210060F203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43581199297EC34C0060F203 /* TypeConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConformance.swift; sourceTree = "<group>"; };
+		4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingToDocumentDirectory.swift; sourceTree = "<group>"; };
+		4358119D297ECDC70060F203 /* SwitchingViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				43581199297EC34C0060F203 /* TypeConformance.swift */,
+				4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */,
+				4358119D297ECDC70060F203 /* SwitchingViewStates.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -148,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4358119C297EC7CE0060F203 /* WritingToDocumentDirectory.swift in Sources */,
 				4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */,
 				4358118D297EC3200060F203 /* ContentView.swift in Sources */,
+				4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */,
 				4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
