@@ -2,8 +2,15 @@ import LocalAuthentication
 import SwiftUI
 
 struct Using_Face_ID_Touh_ID: View {
+    @State var isUnlocked = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if isUnlocked{
+                Text("Unlocked")
+            } else {
+                Text("Lock")
+            }
+        }.onAppear(perform: authenticate)
     }
     
     func authenticate(){
@@ -15,12 +22,13 @@ struct Using_Face_ID_Touh_ID: View {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success,authenticationError in
                 if success {
                     //Successful auth
+                    isUnlocked = true
                 } else {
                     
                 }
             }
         } else {
-            
+            //no Biometrics
         }
     }
 }
