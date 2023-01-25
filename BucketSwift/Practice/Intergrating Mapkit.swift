@@ -5,10 +5,11 @@ struct Intergrating_Mapkit: View {
     
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: -0.12),span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     
+    
     var body: some View {
         NavigationView {
             
-                Map(coordinateRegion: $mapRegion, annotationItems: Location.locations) { location in
+                Map(coordinateRegion: $mapRegion, annotationItems: OldLocation.locations) { location in
                     MapAnnotation(coordinate: location.coordinate) {
                         NavigationLink(destination: Text(location.name)) {
                             Circle()
@@ -32,15 +33,15 @@ struct Intergrating_Mapkit_Previews: PreviewProvider {
     }
 }
 
-struct Location: Identifiable {
+struct OldLocation: Identifiable {
     let id = UUID()
     let name: String
     let coordinate: CLLocationCoordinate2D
 }
 
-extension Location {
+extension OldLocation {
     static let locations = [
-        Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)),
-        Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076))
+        OldLocation(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)),
+        OldLocation(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076))
     ]
 }
