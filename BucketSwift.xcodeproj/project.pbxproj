@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */; };
 		4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358118A297EC3200060F203 /* BucketSwiftApp.swift */; };
 		4358118D297EC3200060F203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358118C297EC3200060F203 /* ContentView.swift */; };
 		4358118F297EC3210060F203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4358118E297EC3210060F203 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using Face ID Touh ID.swift"; sourceTree = "<group>"; };
 		43581187297EC3200060F203 /* BucketSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4358118A297EC3200060F203 /* BucketSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketSwiftApp.swift; sourceTree = "<group>"; };
 		4358118C297EC3200060F203 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */,
 				4358119D297ECDC70060F203 /* SwitchingViewStates.swift */,
 				4358119F297ECF800060F203 /* Intergrating Mapkit.swift */,
+				43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				4358119A297EC34C0060F203 /* TypeConformance.swift in Sources */,
 				4358118D297EC3200060F203 /* ContentView.swift in Sources */,
 				4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */,
+				43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */,
 				4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				DEVELOPMENT_TEAM = 8K52FAQ674;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Bucket swift would like to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +328,7 @@
 				DEVELOPMENT_TEAM = 8K52FAQ674;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Bucket swift would like to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
