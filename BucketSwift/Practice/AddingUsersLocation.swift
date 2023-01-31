@@ -52,7 +52,12 @@ struct AddingUsersLocation: View {
                     .clipShape(Circle())
                     .padding(.trailing)
                     .sheet(item: $selectedPlace) { place in
-                        Text(place.name)
+                        EditView(location: place) { newLocation in
+                            if let index = locations.firstIndex(of: place){
+                                // find where it is in the array and overwrite it in the array 
+                                locations[index] = newLocation
+                            }
+                        }
                     }
                 }
             }

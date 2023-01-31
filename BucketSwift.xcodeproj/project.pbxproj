@@ -18,6 +18,7 @@
 		4358119C297EC7CE0060F203 /* WritingToDocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */; };
 		4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119D297ECDC70060F203 /* SwitchingViewStates.swift */; };
 		435811A0297ECF800060F203 /* Intergrating Mapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358119F297ECF800060F203 /* Intergrating Mapkit.swift */; };
+		43B64B7529898E190016BF94 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B64B7429898E190016BF94 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4358119B297EC7CE0060F203 /* WritingToDocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingToDocumentDirectory.swift; sourceTree = "<group>"; };
 		4358119D297ECDC70060F203 /* SwitchingViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingViewStates.swift; sourceTree = "<group>"; };
 		4358119F297ECF800060F203 /* Intergrating Mapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intergrating Mapkit.swift"; sourceTree = "<group>"; };
+		43B64B7429898E190016BF94 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				4358118C297EC3200060F203 /* ContentView.swift */,
 				4358118E297EC3210060F203 /* Assets.xcassets */,
 				43581190297EC3210060F203 /* Preview Content */,
+				43B64B7429898E190016BF94 /* EditView.swift */,
 			);
 			path = BucketSwift;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				4358118D297EC3200060F203 /* ContentView.swift in Sources */,
 				434F0ACA2981507200DBF318 /* Location.swift in Sources */,
 				4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */,
+				43B64B7529898E190016BF94 /* EditView.swift in Sources */,
 				43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */,
 				434F0AC829814D3300DBF318 /* AddingUsersLocation.swift in Sources */,
 				4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */,
