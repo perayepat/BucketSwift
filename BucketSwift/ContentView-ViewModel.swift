@@ -1,4 +1,5 @@
 import Foundation
+import LocalAuthentication
 import MapKit
 
 //MARK: - Make this view model exclusive to the content view
@@ -9,6 +10,7 @@ extension AddingUsersLocation {
         @Published  var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
         @Published  private(set) var locations : [Location]
         @Published  var selectedPlace: Location?
+        @Published var isUnlocked = false
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         
@@ -50,6 +52,25 @@ extension AddingUsersLocation {
                 // find where it is in the array and overwrite it in the array
                 locations[index] = location
                 save()
+            }
+        }
+        
+        func authenticate(){
+            let context = LAContext()
+            var error: NSError?
+            
+            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error){
+                let reason = "We need to unlock your data"
+                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success,authenticationError in
+                    if success {
+                        //Successful auth
+                        self.isUnlocked = true
+                    } else {
+                        // error 
+                    }
+                }
+            } else {
+                //no Biometrics
             }
         }
     }
