@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433804CC29929617002934A9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433804CB29929617002934A9 /* Result.swift */; };
 		434F0AC829814D3300DBF318 /* AddingUsersLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F0AC729814D3300DBF318 /* AddingUsersLocation.swift */; };
 		434F0ACA2981507200DBF318 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F0AC92981507200DBF318 /* Location.swift */; };
 		43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433804CB29929617002934A9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		434F0AC729814D3300DBF318 /* AddingUsersLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingUsersLocation.swift; sourceTree = "<group>"; };
 		434F0AC92981507200DBF318 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using Face ID Touh ID.swift"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		43581189297EC3200060F203 /* BucketSwift */ = {
 			isa = PBXGroup;
 			children = (
+				433804CB29929617002934A9 /* Result.swift */,
 				43581198297EC3340060F203 /* Practice */,
 				4358118A297EC3200060F203 /* BucketSwiftApp.swift */,
 				4358118C297EC3200060F203 /* ContentView.swift */,
@@ -179,6 +182,7 @@
 				43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */,
 				434F0AC829814D3300DBF318 /* AddingUsersLocation.swift in Sources */,
 				4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */,
+				433804CC29929617002934A9 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

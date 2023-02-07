@@ -20,6 +20,7 @@ struct AddingUsersLocation: View {
                             .background(.white)
                             .clipShape(Circle())
                         Text(location.name)
+                            .fixedSize()ç
                     }
                     .onTapGesture {
                         selectedPlace = location
