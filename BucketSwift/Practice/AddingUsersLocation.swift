@@ -2,15 +2,12 @@ import MapKit
 import SwiftUI
 
 struct AddingUsersLocation: View {
-    
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
-    @State private var locations = [Location]()
-    @State private var selectedPlace: Location?
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         ZStack{
-          
-            Map(coordinateRegion: $mapRegion, annotationItems: locations){ location in
+            
+            Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.locations){ location in
                 MapAnnotation(coordinate: location.coordinate) {
                     VStack {
                         Image(systemName: "star.circle")
@@ -23,11 +20,11 @@ struct AddingUsersLocation: View {
                             .fixedSize()
                     }
                     .onTapGesture {
-                        selectedPlace = location
+                        viewModel.selectedPlace = location
                     }
                 }
             }
-                .ignoresSafeArea()
+            .ignoresSafeArea()
             
             Circle()
                 .fill(.blue)
@@ -39,8 +36,7 @@ struct AddingUsersLocation: View {
                 HStack{
                     Spacer()
                     Button {
-                        let newLocation = Location(name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
-                        locations.append(newLocation)
+                        viewModel.addLocation()
                     } label: {
                         Image(systemName: "plus")
                             .font(.title)
@@ -52,12 +48,9 @@ struct AddingUsersLocation: View {
                     .font(.title)
                     .clipShape(Circle())
                     .padding(.trailing)
-                    .sheet(item: $selectedPlace) { place in
+                    .sheet(item: $viewModel.selectedPlace) { place in
                         EditView(location: place) { newLocation in
-                            if let index = locations.firstIndex(of: place){
-                                // find where it is in the array and overwrite it in the array 
-                                locations[index] = newLocation
-                            }
+                            viewModel.update(location: newLocation)
                         }
                     }
                 }
