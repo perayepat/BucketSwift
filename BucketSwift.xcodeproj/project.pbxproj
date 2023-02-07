@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		433804CC29929617002934A9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433804CB29929617002934A9 /* Result.swift */; };
 		433804CE2992A13C002934A9 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433804CD2992A13C002934A9 /* ContentView-ViewModel.swift */; };
+		433804D02992A7A7002934A9 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433804CF2992A7A7002934A9 /* FileManager-DocumentDirectory.swift */; };
 		434F0AC829814D3300DBF318 /* AddingUsersLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F0AC729814D3300DBF318 /* AddingUsersLocation.swift */; };
 		434F0ACA2981507200DBF318 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F0AC92981507200DBF318 /* Location.swift */; };
 		43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		433804CB29929617002934A9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		433804CD2992A13C002934A9 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		433804CF2992A7A7002934A9 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
 		434F0AC729814D3300DBF318 /* AddingUsersLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingUsersLocation.swift; sourceTree = "<group>"; };
 		434F0AC92981507200DBF318 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		43541B5329813E4F00077EB3 /* Using Face ID Touh ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using Face ID Touh ID.swift"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				43581190297EC3210060F203 /* Preview Content */,
 				43B64B7429898E190016BF94 /* EditView.swift */,
 				433804CD2992A13C002934A9 /* ContentView-ViewModel.swift */,
+				433804CF2992A7A7002934A9 /* FileManager-DocumentDirectory.swift */,
 			);
 			path = BucketSwift;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				434F0ACA2981507200DBF318 /* Location.swift in Sources */,
 				4358119E297ECDC70060F203 /* SwitchingViewStates.swift in Sources */,
 				43B64B7529898E190016BF94 /* EditView.swift in Sources */,
+				433804D02992A7A7002934A9 /* FileManager-DocumentDirectory.swift in Sources */,
 				43541B5429813E4F00077EB3 /* Using Face ID Touh ID.swift in Sources */,
 				434F0AC829814D3300DBF318 /* AddingUsersLocation.swift in Sources */,
 				4358118B297EC3200060F203 /* BucketSwiftApp.swift in Sources */,
