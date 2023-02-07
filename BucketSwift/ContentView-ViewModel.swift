@@ -7,7 +7,7 @@ extension AddingUsersLocation {
     @MainActor class ViewModel: ObservableObject {
         
         @Published  var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
-        @Published  private(set) var locations = [Location]()
+        @Published  private(set) var locations : [Location]
         @Published  var selectedPlace: Location?
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
@@ -40,6 +40,7 @@ extension AddingUsersLocation {
                                        latitude: mapRegion.center.latitude,
                                        longitude: mapRegion.center.longitude)
             locations.append(newLocation)
+            save()
         }
         
         func update(location:Location){
@@ -48,6 +49,7 @@ extension AddingUsersLocation {
             if let index = locations.firstIndex(of: selectedPlace){
                 // find where it is in the array and overwrite it in the array
                 locations[index] = location
+                save()
             }
         }
     }
